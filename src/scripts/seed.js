@@ -151,7 +151,7 @@ const seedData = async () => {
 
             let status = "Completed";
             if (startTime > now) status = "Booked"; // Future
-            else if (endTime > now && startTime < now) status = "Active"; // Currently happening
+            else if (endTime > now && startTime < now) status = "InProgress"; // Currently happening
             else status = "Completed"; // Past
 
             // Randomly cancel some
